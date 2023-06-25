@@ -1,9 +1,229 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <p>This is my first portfoio at GitHub</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <a href="#">
+                <span>RU</span>
+            </a>
+            <span>|</span>
+            <a href="en.html">
+                <span>EN</span>
+            </a>
+        </div>
+        <div class="content">
+            <div class="content__hello">
+                <img class="content__hello-img" src="assets/img/avatar.png" alt="Avatar">
+                <div class="content__hello-text">
+                    <span class="content__description">Надежда Федина. Портфолио</span>
+                    <nav class="content__social">
+                        <a href="https://github.com/nadia3373" class="content__social-item">
+                            <img src="assets/img/icons/github.svg" alt="GitHub">
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://t.me/nadia3373" class="content__social-item">
+                            <img src="assets/img/icons/telegram.svg" alt="Telegram">
+                            <span>Telegram</span>
+                        </a>
+                        <a href="https://wa.me/79233773373" class="content__social-item">
+                            <img src="assets/img/icons/whatsapp.svg" alt="WhatsApp">
+                            <span>WhatsApp</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            <div class="content__main">
+                <h1 class="content__about-header">Мои достижения и обучение</h1>
+                <div class="content__main-item">
+                    <div class="main-item__description">
+                        <ul>
+                            <li>
+                                Изучаю программирование с 2022 года.
+                            </li>
+                            <li>
+                                Учусь преимущественно самостоятельно: прошла курсы Гарвардского университета
+                                (CS50's Introduction to Computer Science и CS50's Web Programming with
+                                Python and JavaScript).
+                            </li>
+                            <li>
+                                Мне наиболее интересна веб-разработка на Python, в настоящее время прохожу
+                                профессиональную переподготовку по направлению Python-разработки.
+                            </li>
+                            <li>
+                                Я уделяю особое внимание практическому применению получаемых знаний и навыков:
+                                в процессе обучения реализовала несколько учебных проектов для себя и знакомых.
+                            </li>
+                            <li>
+                                Среди важнейших аспектов, которые я учитываю при разработке, – качество кода,
+                                продуманность бизнес-логики и удовлетворённость пользователя.
+                            </li>
+                            <li>
+                                Владею английским языком на уровне B2/C1 – читаю и понимаю документацию в оригинале.
+                                Участвовала в переводе документации для фреймворка FastAPI.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h1 class="content__about-header">Мои проекты</h1>
+                <h2 class="content__subheader">2023</h2>
+                <div class="content__main-item project">
+                    <a data-fslightbox href="assets/img/project5.png">
+                        <img src="assets/img/project5.png" alt="project5">
+                    </a>
+                    <div>
+                        <div class="main-item__title">
+                            <span>Микросервисное веб-приложение для профессионалов в сфере красоты (в работе)</span>
+                        </div>
+                        <div class="main-item__description">
+                            <p>
+                                Данное приложение является моим дипломным проектом на программе профессиональной переподготовки
+                                по направлению Python-разработки. Проект предназначен для мастеров в сфере красоты и ориентирован
+                                на упрощение их взаимодействия с клиентами. Мастера получат возможность представлять свои услуги
+                                и информацию о себе. Клиенты смогут удобным способом находить мастера по рейтингу, району или типу услуг,
+                                записываться на приём и оставаться в курсе о статусе своей записи через Telegram.
+                            </p>
+                        </div>
+                        <div class="main-item__subdescription">
+                            <p><span>Стек:</span> FastAPI, Angular, MongoDB, Docker, Telegram API, Yandex Maps API</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main-item project">
+                    <a data-fslightbox href="assets/img/project4.png">
+                        <img src="assets/img/project4.png" alt="project4">
+                    </a>
+                    <div>
+                        <div class="main-item__title">
+                            <span>Основа системы визуализации и калькуляции проектов тёплого пола (MVP)</span>
+                        </div>
+                        <div class="main-item__description">
+                            <p>
+                                Проект предназначен для удобства организаций-поставщиков систем электро-водяного тёплого пола.
+                                Система позволяет пользователю изобразить контур помещения на удобной сетке,
+                                затем вычисляет размеры помещения и подбирает все возможные комбинации
+                                нагревательных элементов в рабочем диапазоне мощности.
+                                Пользователь может выбрать наиболее подходящую комбинацию, после чего будет сформирован
+                                отчёт с изображением раскладки нагревательных элементов этой комбинации и списком всех
+                                элементов проекта.
+                                Приложение развёрнуто в Docker, информация о запуске локальной версии доступна в репозитории.
+                            </p>
+                        </div>
+                        <div class="main-item__subdescription">
+                            <p><span>Стек:</span> FastAPI, Angular, MongoDB, Docker</p>
+                            <p class="main-item__links"><a href="https://github.com/nadia3373/Web-App-for-Calculation-and-Visualisation-of-Underfloor-Heating-Projects"><span>Код</span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="content__subheader">2022</h2>
+                <div class="content__main-item project">
+                    <a data-fslightbox href="assets/img/project3.png">
+                        <img src="assets/img/project3.png" alt="project3">
+                    </a>
+                    <div>
+                        <div class="main-item__title">
+                            <span>Веб-приложение для мастеров красоты на Django</span>
+                        </div>
+                        <div class="main-item__description">
+                            <p>
+                                Итоговый проект для курса CS50's Web Programming with Python and JavaScript.
+                                Веб-приложение для мастеров в сфере красоты, позволяющего клиентам записываться на приём к мастерам,
+                                а мастерам управлять записями, каталогом своих услуг и информацией о своей компании.
+                                Демо-версия развёрнута на хостинге PythonAnywhere с использованием СУБД PostgreSQL.
+                            </p>
+                        </div>
+                        <div class="main-item__subdescription">
+                            <p><span>Стек:</span> Django, JavaScript, HTML, CSS, Bootstrap, PostgreSQL</p>
+                            <p class="main-item__links"><a href="https://github.com/nadia3373/CS50-s-Web-Programming-with-Python-and-Javascript/tree/main/Project%205%20%7C%20Welly"><span>Код</span></a><span>|</span><a href="https://youtu.be/x-0Tgss4YW4"><span>Видеопрезентация</span></a><span>|</span><a href="https://nadia3373.pythonanywhere.com/companies/mirror"><span>Демо</span></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main-item project">
+                    <a data-fslightbox href="assets/img/project.png">
+                        <img src="assets/img/project.png" alt="project">
+                    </a>
+                    <div>
+                        <div class="main-item__title">
+                            <span>Веб-приложение социальной сети на Django</span>
+                        </div>
+                        <div class="main-item__description">
+                            <p>
+                                Учебный проект, выполненный в рамках курса CS50's Web Programming with Python and JavaScript.
+                                Разработка социальной сети микроблогов на Python с возможностью создавать,
+                                редактировать, удалять, просматривать, оценивать посты, просматривать и добавлять в
+                                "Избранные" профили других пользователей.
+                            </p>
+                        </div>
+                        <div class="main-item__subdescription">
+                            <p><span>Стек:</span> Django, HTML, SCSS, Bootstrap, JavaScript, SQLite3</p>
+                            <p class="main-item__links"><a href="https://github.com/nadia3373/CS50-s-Web-Programming-with-Python-and-Javascript/tree/main/Project%204%20%7C%20Network"><span>Код</span></a><span>|</span><a href="https://youtu.be/IpI2Lrv3lOM"><span>Видеопрезентация</span></a> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main-item project">
+                    <a data-fslightbox href="assets/img/project1.png">
+                        <img src="assets/img/project1.png" alt="project1">
+                    </a>
+                    <div>
+                        <div class="main-item__title">
+                            <span>Веб-приложение аукциона на Django</span>
+                        </div>
+                        <div class="main-item__description">
+                            <p>
+                                Учебный проект, выполненный в рамках курса CS50's Web Programming with Python and JavaScript.
+                                Разработка аукционной площадки на Python с возможностью создавать,
+                                редактировать, удалять, просматривать, комментировать лоты и делать ставки.
+                            </p>
+                        </div>
+                        <div class="main-item__subdescription">
+                            <p><span>Стек:</span> Django, HTML, SCSS, Bootstrap, JavaScript, SQLite3</p>
+                            <p class="main-item__links"><a href="https://github.com/nadia3373/CS50-s-Web-Programming-with-Python-and-Javascript/tree/main/Project%202%20%7C%20Commerce"><span>Код</span></a><span>|</span><a href="https://youtu.be/d3q55mGbQwo"><span>Видеопрезентация</span></a> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main-item project">
+                    <a data-fslightbox href="assets/img/project2.png">
+                        <img src="assets/img/project2.png" alt="project2">
+                    </a>
+                    <div>
+                        <div class="main-item__title">
+                            <span>Веб-приложение для приёма и доставки заказов в кафе</span>
+                        </div>
+                        <div class="main-item__description">
+                            <p>
+                                Итоговый проект для курса CS50's Introduction to Computer Science.
+                                Разработка веб-приложения на Python для кафе, позволяющего организовать
+                                приём заказов и доставку по территории офисного центра.
+                            </p>
+                        </div>
+                        <div class="main-item__subdescription">
+                            <p><span>Стек:</span>  Flask, JavaScript, HTML, CSS, Bootstrap, Telegram API</p>
+                            <p class="main-item__links"><a href="https://github.com/nadia3373/CS50-s-Introduction-to-Computer-Science/tree/main/Final%20Project"><span>Код</span></a><span>|</span><a href="https://youtu.be/Gnc4v3Zp9tQ"><span>Видеопрезентация</span></a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>
+                <span>© Nadezhda Fedina</span>
+            </div>
+            <div>
+                <nav class="footer__social">
+                    <a href="#link" target="_blank" class="footer__social-item">
+                        <img src="assets/img/icons/telegram.svg" alt="Telegram">
+                    </a>
+                    <a href="#link" target="_blank" class="footer__social-item">
+                        <img src="assets/img/icons/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="assets/scripts/fslightbox.js"></script>
+</body>
 </html>
